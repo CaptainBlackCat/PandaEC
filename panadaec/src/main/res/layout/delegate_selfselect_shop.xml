@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey_f5"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="自选商品"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line"
+        android:layout_marginTop="@dimen/DIMEN_15PX"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启自选"
+            android:textSize="@dimen/DIMEN_25PX"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_3d"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启自选后，您的小店只显示您选择的产品"
+            android:textColor="@color/grey_96"
+            android:textSize="@dimen/DIMEN_25PX"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_below="@+id/tv1"/>
+
+        <com.wta.NewCloudApp.jiuwei138940.latte_ui.togglebutton.ToggleButton
+            android:id="@+id/selfselect_toggle_parent"
+            android:layout_width="@dimen/DIMEN_80PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            app:tbOffBorderColor="@color/list_line"
+            app:tbOffColor="@color/list_line"
+            app:tbOnColor="@color/green_27b443"
+            app:tbBorderWidth="@dimen/DIMEN_1PX"
+            app:tbAsDefaultOn="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            app:tbSpotColor="@color/white"></com.wta.NewCloudApp.jiuwei138940.latte_ui.togglebutton.ToggleButton>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line"
+       />
+
+
+    <RelativeLayout
+        android:id="@+id/selfselect_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_15PX"
+            android:background="@color/grey_f5"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_below="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/list_line"
+         />
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启自选"
+            android:layout_below="@+id/tv5"
+            android:textSize="@dimen/DIMEN_25PX"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_3d"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果您选择较多商品，建议您开启与总店同步分类"
+            android:textColor="@color/grey_96"
+            android:textSize="@dimen/DIMEN_25PX"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_below="@+id/tv2"/>
+
+        <com.wta.NewCloudApp.jiuwei138940.latte_ui.togglebutton.ToggleButton
+            android:id="@+id/selfselect_toggle_child"
+            android:layout_width="@dimen/DIMEN_80PX"
+            android:layout_height="@dimen/DIMEN_40PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            app:tbOffBorderColor="@color/list_line"
+            app:tbOffColor="@color/list_line"
+            app:tbOnColor="@color/green_27b443"
+            app:tbBorderWidth="@dimen/DIMEN_1PX"
+            app:tbAsDefaultOn="false"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/DIMEN_40PX"
+            app:tbSpotColor="@color/white"></com.wta.NewCloudApp.jiuwei138940.latte_ui.togglebutton.ToggleButton>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv4"
+            android:background="@color/list_line"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:text="选择商品"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:layout_marginBottom="@dimen/DIMEN_30PX"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey_3d"
+                android:textSize="@dimen/DIMEN_25PX" />
+
+            <com.wta.NewCloudApp.jiuwei138940.latte_ui.roundwidget.QMUIRoundButton
+                android:id="@+id/selfselect_sbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+选择"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/grey_3d"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/DIMEN_12PX"
+                android:paddingRight="@dimen/DIMEN_12PX"
+                android:paddingTop="@dimen/DIMEN_3PX"
+                android:paddingBottom="@dimen/DIMEN_3PX"
+                app:qmui_radius="@dimen/DIMEN_5PX"
+                app:qmui_borderColor="@color/grey_3d"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                app:qmui_borderWidth="@dimen/DIMEN_1PX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv7"
+                android:background="@color/list_line"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

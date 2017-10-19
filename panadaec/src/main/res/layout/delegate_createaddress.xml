@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收货地址"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="收件人:"
+            android:paddingTop="@dimen/DIMEN_30PX"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <EditText
+            android:id="@+id/address_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_666"
+            android:textSize="@dimen/DIMEN_30PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_3PX"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="联系电话:"
+            android:paddingTop="@dimen/DIMEN_30PX"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <EditText
+            android:id="@+id/address_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_666"
+            android:textSize="@dimen/DIMEN_40PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="所在地区:"
+            android:paddingTop="@dimen/DIMEN_30PX"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <EditText
+            android:id="@+id/address_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_666"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <ImageView
+            android:id="@+id/address_select_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/DIMEN_30PX"
+            android:src="@drawable/my_back" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_3PX"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="所在街道:"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:paddingBottom="@dimen/DIMEN_30PX"
+            android:paddingTop="@dimen/DIMEN_30PX"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_30PX" />
+
+        <EditText
+            android:id="@+id/address_street"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_666"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <ImageView
+            android:id="@+id/address_select_street"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/DIMEN_30PX"
+            android:src="@drawable/my_back" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_3PX"
+        android:background="@color/list_line" />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:lines="3"
+       android:background="@color/white"
+       android:hint="填写详细地址"
+       android:textSize="@dimen/DIMEN_30PX"
+       android:textColor="@color/grey_666"
+       android:paddingLeft="@dimen/DIMEN_30PX"
+       android:paddingBottom="@dimen/DIMEN_30PX"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_3PX"
+        android:background="@color/list_line" />
+
+    <Button
+        android:id="@+id/address_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:background="@drawable/click_red"
+        android:gravity="center"
+        android:text="保存地址"
+        android:layout_margin="@dimen/DIMEN_20PX"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_30PX" />
+</LinearLayout>

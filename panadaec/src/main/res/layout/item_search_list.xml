@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="4dp">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/image_searchList"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="25" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/listTitle_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="韩国·美容养颜美白肌肤强力补水活力肌肤美容 养颜活力补水"
+                android:textColor="#282828"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp">
+
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/listPrice_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="¥"
+                    android:textColor="@color/red_f7443e"
+                    android:textSize="20dp" />
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/search_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/shop_cartmini" />
+            </RelativeLayout>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.CardView>

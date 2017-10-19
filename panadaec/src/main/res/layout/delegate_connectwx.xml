@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grey_f5"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关联微信"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入微信号"
+        android:textColor="@color/grey_666"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:layout_margin="@dimen/DIMEN_20PX"
+        android:lines="1"
+        android:background="@drawable/bg_wxedittext"/>
+</LinearLayout>

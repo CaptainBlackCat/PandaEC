@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PanadaEc</string>
+
+    <string name="share">分享</string>
+    <string name="collection">收藏</string>
+    <string name="delete">删除</string>
+
+    <string name="shopcart_left">自营商品</string>
+
+    <string name="addcart_goods">加入购物车</string>
+    <string name="buy_goods">立即购买</string>
+    <string name="goods_shName">熊猫全球购</string>
+    <string name="goods_dpAll">全部</string>
+    <string name="goods_dpNew">新品</string>
+    <string name="goods_dpcx">促销</string>
+    <string name="goods_all">全部商品</string>
+    <string name="goods_go">进店逛逛</string>
+    <string name="recommand_goods">推荐商品</string>
+    <string name="new_products">新品上市</string>
+    <string name="hot_sale">热卖商品</string>
+    <string name="on_sale">促销商品</string>
+    <string name="seller_mail">卖家包邮</string>
+    <string name="flash_sale">限时抢购</string>
+    <string name="price_between">价格区间</string>
+    <string name="choice_sort">选择分类</string>
+    <string name="cancle_screening">取消筛选</string>
+    <string name="confirm">确认</string>
+    <string name="detail_confirm">确定</string>
+    <string name="synthesis">综合</string>
+    <string name="search">搜索</string>
+    <string name="history_search">历史搜索</string>
+    <string name="sales">销量</string>
+    <string name="price">价格</string>
+    <string name="screening">筛选</string>
+    <string name="search_deletehistory">清空历史搜索</string>
+    <string name="number">数量</string>
+    <string name="no_dispatch_place">不配送区域:</string>
+    <string name="modify_cart_num">修改购买数量</string>
+    <string name="for_recommand">为你推荐</string>
+
+
+</resources>

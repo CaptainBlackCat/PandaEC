@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grey_f5"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_110PX"
+    android:background="@color/red_f7443e"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="积分商城"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/DIMEN_20PX"
+        android:paddingRight="@dimen/DIMEN_20PX"
+        android:src="@drawable/white_back" />
+</RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/integralshop_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/DIMEN_20PX"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jifenxiaozhu"/>
+        <TextView
+            android:id="@+id/integralshop_myintegral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_3d"
+            android:clickable="true"
+            android:background="@drawable/click"
+            android:text="我的积分:233.000"
+          />
+    </LinearLayout>
+        <TextView
+            android:layout_width="1dp"
+            android:background="@color/list_line"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/DIMEN_20PX"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/canyujilu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参与记录"
+            android:clickable="true"
+            android:background="@drawable/click"
+            android:textSize="@dimen/DIMEN_30PX"
+            android:textColor="@color/grey_3d"
+            android:gravity="center"
+          />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

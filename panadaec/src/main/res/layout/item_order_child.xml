@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_order_child_thumb"
+        android:layout_width="@dimen/DIMEN_150PX"
+        android:layout_height="@dimen/DIMEN_150PX"
+        android:layout_marginTop="@dimen/DIMEN_15PX"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginBottom="@dimen/DIMEN_15PX"
+        android:src="@drawable/ic_launcher"/>
+    <TextView
+        android:id="@+id/item_order_child_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥000.00"
+        android:textSize="@dimen/DIMEN_30PX"
+        android:textColor="@color/grey_666"
+        android:layout_marginRight="@dimen/DIMEN_25PX"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/DIMEN_50PX"/>
+    <TextView
+        android:id="@+id/item_order_child_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+        android:lines="2"
+        android:ellipsize="end"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:layout_marginRight="@dimen/DIMEN_50PX"
+        android:layout_marginLeft="@dimen/DIMEN_15PX"
+        android:layout_marginTop="@dimen/DIMEN_50PX"
+        android:layout_toLeftOf="@+id/item_order_child_price"
+        android:layout_toRightOf="@+id/item_order_child_thumb"/>
+    <TextView
+        android:id="@+id/item_order_child_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_order_child_price"
+        android:layout_marginRight="@dimen/DIMEN_25PX"
+        android:layout_marginTop="@dimen/DIMEN_10PX"
+        android:text="X1"
+        />
+</RelativeLayout>

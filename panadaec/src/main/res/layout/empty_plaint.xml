@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mycollect_empty"
+    android:background="@color/bg_all">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_200PX"
+        android:src="@drawable/plaint"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_30PX"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:textColor="@color/grey_96"
+        android:text="您还没有收藏任何商品~"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去逛逛"
+        android:textColor="#F24545"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/DIMEN_35PX"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:background="@drawable/bg_empty_go"
+        />
+</LinearLayout>

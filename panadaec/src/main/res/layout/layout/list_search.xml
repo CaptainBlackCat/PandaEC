@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp">
+
+            <ImageView
+                android:id="@+id/searchv_back"
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/fanhui" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/search_center"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="6"
+                android:background="@drawable/search_background"
+                android:drawableLeft="@drawable/search"
+                android:gravity="center_vertical"
+                android:hint="输入商品进行搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/search_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:button="@drawable/check_searchmode" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:divider="@drawable/line"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/search_zong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/synthesis"
+            android:textColor="#454545" />
+
+        <CheckBox
+            android:id="@+id/search_sales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/sales"
+            android:textColor="#454545" />
+
+        <LinearLayout
+            android:id="@+id/s_pirce_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/ppp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price" />
+
+            <CheckBox
+                android:id="@+id/search_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:button="@drawable/check_price"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/gone_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:button="@drawable/buy_normal"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_screen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/screening_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/screening"
+                android:textColor="#454545" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/screening_btn"
+                android:clickable="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#4E4E4E" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <View
+            android:id="@+id/mask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="#66000000" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

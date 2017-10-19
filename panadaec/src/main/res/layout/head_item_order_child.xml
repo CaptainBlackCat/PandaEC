@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/DIMEN_20PX"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/head_item_order_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shop_dp"
+        />
+    <TextView
+        android:id="@+id/head_item_order_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_10PX"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:textColor="@color/grey_3d"
+        android:text="熊猫公社"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/my_back"/>
+</LinearLayout>

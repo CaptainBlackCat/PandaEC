@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:id="@+id/item_home_navigation_activity_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_150PX"
+        android:paddingTop="@dimen/DIMEN_12PX"
+        android:scaleType="fitXY"
+        android:paddingBottom="@dimen/DIMEN_12PX"
+        android:src="@drawable/ic_launcher_round"/>
+</LinearLayout>

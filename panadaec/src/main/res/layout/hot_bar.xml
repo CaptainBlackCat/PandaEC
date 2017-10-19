@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_10PX"
+        android:layout_marginRight="@dimen/DIMEN_10PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:background="@drawable/hot_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热"
+            android:textColor="@color/red_f7443e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点 | "
+            android:textColor="@color/black_333" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/DIMEN_10PX"
+            android:paddingTop="@dimen/DIMEN_8PX"
+            android:src="@drawable/hot" />
+
+        <com.wta.NewCloudApp.jiuwei138940.latte_ui.upmarqueeview.UPMarqueeView
+            android:id="@+id/hotbar_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

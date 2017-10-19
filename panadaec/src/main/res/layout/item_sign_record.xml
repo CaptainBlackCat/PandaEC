@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/DIMEN_15PX"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/item_sign_record_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:layout_marginTop="@dimen/DIMEN_10PX"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:textColor="@color/grey_3d"
+        android:text="积分日常签到+0积分"/>
+    <TextView
+        android:id="@+id/item_sign_record_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日常签到"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:background="@drawable/bg_sign_record"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/DIMEN_5PX"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_below="@id/item_sign_record_log"/>
+
+    <TextView
+        android:id="@+id/item_sign_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_sign_record_tv"
+        android:layout_below="@+id/item_sign_record_log"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:layout_marginLeft="@dimen/DIMEN_15PX"
+        android:layout_marginTop="@dimen/DIMEN_9PX"
+        android:text="0000-00-00 00:00:00"/>
+    <TextView
+        android:id="@+id/item_sign_record_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red_ef3030"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

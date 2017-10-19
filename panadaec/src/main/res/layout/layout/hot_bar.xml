@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hot_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热"
+            android:textColor="@color/red_f7443e" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点 | "
+            android:textColor="@color/black_333" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:paddingTop="2dp"
+            android:src="@drawable/hot" />
+
+        <com.Latte.PanadaEc.main.widget.MarqueeText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="走马灯效果的演示走马灯效果的演示走马灯效果的演示走马灯效果的演示走马灯效果的演示走马灯效果的演示"/>
+
+    </LinearLayout>
+</LinearLayout>

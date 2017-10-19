@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_dispatch_Dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_marginTop="2dp"
+        android:visibility="visible"
+        android:id="@+id/dispatch_line"
+        android:layout_width="3px"
+        android:layout_height="16dp"
+        android:layout_marginLeft="5dp"
+        android:background="#A5A5A5" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的收藏"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:id="@+id/mycollect_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+
+        <TextView
+            android:id="@+id/mycollect_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/select_all"
+            android:drawablePadding="@dimen/DIMEN_10PX"
+            android:gravity="center"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:text="全选"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_30PX"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/mycollect_gou"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingTop="@dimen/DIMEN_5PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:visibility="gone"
+            android:src="@drawable/gou"
+            />
+        <ImageView
+            android:id="@+id/mycollect_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingTop="@dimen/DIMEN_5PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/edit"
+            />
+
+        <ImageView
+            android:id="@+id/mycollect_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/mycollect_gou"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:visibility="gone"
+            android:src="@drawable/clear_white"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.wta.NewCloudApp.jiuwei138940.latte_ui.pullRefreshLayout.QMUIPullRefreshLayout
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mycollect_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+        </com.wta.NewCloudApp.jiuwei138940.latte_ui.pullRefreshLayout.QMUIPullRefreshLayout>
+        <include
+            layout="@layout/empty_plaint"
+            android:visibility="gone"></include>
+    </RelativeLayout>
+</LinearLayout>

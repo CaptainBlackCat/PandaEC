@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/DIMEN_10PX"
+    >
+    <ImageView
+        android:id="@+id/item_integralshop_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_320PX"
+        android:scaleType="centerCrop"
+        android:src="@drawable/base_rect"/>
+    <TextView
+        android:id="@+id/item_integralshop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:text="【香港直邮】 美国 DDROPS 婴儿维生素"
+        android:textColor="@color/grey_3d"
+        android:lines="2"
+        android:ellipsize="end"/>
+    <TextView
+        android:id="@+id/item_integralshop_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00000积分"
+        android:textSize="@dimen/DIMEN_30PX"
+        android:textStyle="bold"
+        android:textColor="@color/red_f7443e"/>
+</LinearLayout>

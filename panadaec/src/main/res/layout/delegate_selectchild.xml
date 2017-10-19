@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择商品"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/select_child_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_50PX"
+                android:layout_marginTop="@dimen/DIMEN_15PX"
+                android:layout_marginBottom="@dimen/DIMEN_20PX"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:layout_marginRight="@dimen/DIMEN_40PX"
+                android:drawableLeft="@drawable/search"
+                android:hint="输入关键字..."
+                android:textSize="@dimen/DIMEN_25PX"
+                android:drawablePadding="@dimen/DIMEN_15PX"
+                android:paddingLeft="@dimen/DIMEN_15PX"
+                android:singleLine="true"
+                android:lines="1"
+                android:background="@drawable/bg_select_child_search"/>
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/select_child_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

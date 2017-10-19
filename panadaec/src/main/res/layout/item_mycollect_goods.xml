@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/item_mycollect_carimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        style="@style/CustomCheckBoxTheme"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/DIMEN_25PX"
+        />
+    <ImageView
+        android:id="@+id/item_mycollect_thumb"
+        android:layout_width="@dimen/DIMEN_160PX"
+        android:layout_toRightOf="@+id/item_mycollect_carimg"
+        android:layout_height="@dimen/DIMEN_160PX"
+        android:layout_margin="@dimen/DIMEN_15PX"
+        android:src="@drawable/base_rect"/>
+    <TextView
+        android:id="@+id/item_mycollect_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:textColor="@color/grey_3d"
+        android:ellipsize="end"
+        android:layout_marginTop="@dimen/DIMEN_15PX"
+        android:layout_toRightOf="@id/item_mycollect_thumb"
+        android:text="哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"/>
+    <TextView
+        android:id="@+id/item_mycollect_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_30PX"
+        android:textColor="@color/red_f7443e"
+        android:text="￥255.00"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/item_mycollect_thumb"
+        android:layout_toRightOf="@+id/item_mycollect_thumb"
+        android:layout_toEndOf="@+id/item_mycollect_thumb"
+        />
+</RelativeLayout>

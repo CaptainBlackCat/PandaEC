@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:clickable="false"
+        android:layout_marginTop="10dp"
+        android:id="@+id/deleteb_search"
+        android:layout_width="169dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/search_deletebtn"
+        android:drawableLeft="@drawable/search_delete"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="@string/search_deletehistory"
+        android:textColor="#6F6F6F" />
+</LinearLayout>

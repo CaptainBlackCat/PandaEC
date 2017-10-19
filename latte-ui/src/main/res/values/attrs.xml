@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="OKSignView">
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="signColor" format="color"></attr>
+        <attr name="textColor" format="color"></attr>
+        <attr name="dividerColor" format="color"></attr>
+        <attr name="bgColor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="OkTimeLine">
+        <attr name="timeLineWidth" format="dimension"></attr>
+        <attr name="radius" format="dimension"></attr>
+        <attr name="progressColor" format="color"></attr>
+        <attr name="timeLienColor" format="color"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+    </declare-styleable>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!--去掉边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--悬浮-->
+        <item name="android:windowIsFloating">true</item>
+        <!--半透明-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--不需要标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--背景透明-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--允许模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--全屏幕-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <declare-styleable name="QMUIPullRefreshLayout">
+        <!-- RefreshView的初始offset -->
+        <attr name="qmui_refresh_init_offset" format="dimension"/>
+        <!-- 刷新时RefreshView的offset -->
+        <attr name="qmui_refresh_end_offset" format="dimension"/>
+        <!-- TargetView(ListView或者ScrollView等)的初始位置 -->
+        <attr name="qmui_target_init_offset" format="dimension"/>
+        <!-- 刷新时TargetView(ListView或者ScrollView等)的位置-->
+        <attr name="qmui_target_refresh_offset" format="dimension"/>
+        <!-- 是否自动根据RefreshView的高度计算RefreshView的初始位置-->
+        <attr name="qmui_auto_calculate_refresh_init_offset" format="boolean"/>
+        <!-- 是否自动根据TargetView在刷新时的位置计算RefreshView的结束位置-->
+        <attr name="qmui_auto_calculate_refresh_end_offset" format="boolean"/>
+        <!-- TargetView的刷新位置与RefreshView高度相等-->
+        <attr name="qmui_equal_target_refresh_offset_to_refresh_view_height" format="boolean"/>
+
+        <!--progress的颜色-->
+        <attr name="qmui_refresh_progress_color" format="color"></attr>
+    </declare-styleable>
+    <attr name="QMUIPullRefreshLayoutStyle" format="reference"/>
+    <attr name="qmui_config_color_blue" format="color"/>
+    <attr name="QMUIButtonStyle" format="reference"/>
+
+    <declare-styleable name="QMUIRoundButton">
+        <attr name="qmui_backgroundColor" format="color"/>
+        <attr name="qmui_borderColor" format="color"/>
+        <attr name="qmui_borderWidth" format="dimension"/>
+        <attr name="qmui_isRadiusAdjustBounds" format="boolean"/>
+        <attr name="qmui_radius" format="dimension"/>
+        <attr name="qmui_radiusTopLeft" format="dimension"/>
+        <attr name="qmui_radiusTopRight" format="dimension"/>
+        <attr name="qmui_radiusBottomLeft" format="dimension"/>
+        <attr name="qmui_radiusBottomRight" format="dimension"/>
+    </declare-styleable>
+</resources>

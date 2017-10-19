@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="160dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/modify_cart_num"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_change_num"
+        android:layout_width="match_parent"
+        android:layout_height="36dip"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/bt_reduce"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:background="@drawable/shop_cart_btn"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="30sp" />
+
+        <com.le.customview.NumEditeText
+            android:id="@+id/et_num"
+            android:layout_width="70dip"
+            android:layout_height="36dip"
+            android:layout_toRightOf="@id/bt_reduce"
+            android:background="@drawable/shop_cart_btn"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/bt_add"
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_toRightOf="@id/et_num"
+            android:background="@drawable/shop_cart_btn"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_666" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/normal_btn_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/normal_btn"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_220PX">
+    <ImageView
+        android:id="@+id/one_plus_two_img1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/one_plus_two_img2"
+        android:layout_width="0dp"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+</LinearLayout>

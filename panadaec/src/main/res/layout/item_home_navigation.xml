@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/click"
+    android:clickable="true"
+    >
+
+    <ImageView
+        android:id="@+id/item_home_navigation_thumb"
+        android:layout_width="@dimen/DIMEN_100PX"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:src="@drawable/ic_launcher_round"
+        android:layout_marginTop="@dimen/DIMEN_12PX"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/item_home_navigation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DIMEN_30PX"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:text="天天拼团"/>
+</LinearLayout>

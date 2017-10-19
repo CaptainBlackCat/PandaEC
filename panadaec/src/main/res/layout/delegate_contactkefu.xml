@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grey_f5"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="联系客服"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/kefu_weixin_infp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_30PX"
+        android:layout_marginTop="@dimen/DIMEN_40PX"
+        android:layout_marginBottom="@dimen/DIMEN_40PX"
+        android:textColor="@color/grey_3d"
+        android:gravity="center"
+        android:text="客服微信号: anmurkefu"/>
+    <TextView
+        android:id="@+id/kefu_qq_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="客服QQ:23046666433"
+        android:textColor="@color/grey_3d"
+        android:gravity="center"
+        android:textSize="@dimen/DIMEN_30PX"/>
+</LinearLayout>

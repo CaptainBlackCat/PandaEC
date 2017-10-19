@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PandaEC.iml" filepath="$PROJECT_DIR$/PandaEC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customview/customview.iml" filepath="$PROJECT_DIR$/customview/customview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/latte-ui/latte-ui.iml" filepath="$PROJECT_DIR$/latte-ui/latte-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/latte_core/latte_core.iml" filepath="$PROJECT_DIR$/latte_core/latte_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/panadaec/panadaec.iml" filepath="$PROJECT_DIR$/panadaec/panadaec.iml" />
+    </modules>
+  </component>
+</project>

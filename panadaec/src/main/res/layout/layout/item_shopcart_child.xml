@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/ligh_white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <CheckBox
+            android:id="@+id/cart_child_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:button="@drawable/checkbox_shop"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/cart_thumb"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/go_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/cart_title"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="9dp"
+                android:height="30dp"
+                android:text="天杞园 养生健康鞋 简约／健康 舒适养生鞋"
+                android:textColor="#060606"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cart_spec"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/cart_title"
+                android:layout_marginTop="10dp"
+                android:text="黑色 健康 43"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="￥498"
+                android:textColor="@color/red_f7443e"
+                android:textSize="16sp" />
+
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="21dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/cart_reduce"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="-1dp"
+                    android:background="@drawable/shop_cart_btn"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="15sp" />
+
+                <com.le.customview.NumEditeText
+                    android:id="@+id/calcucate_num"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_toRightOf="@+id/cart_reduce"
+                    android:background="@drawable/shop_cart_btn"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:textColor="#3d3d3d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cart_add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_toRightOf="@+id/calcucate_num"
+                    android:background="@drawable/shop_cart_btn"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

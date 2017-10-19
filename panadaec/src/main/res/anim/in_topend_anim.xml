@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--自定义从上到下进入动画-->
+    <translate android:duration="100"
+        android:fromYDelta="0%"
+        android:toYDelta="100"/>
+</set>

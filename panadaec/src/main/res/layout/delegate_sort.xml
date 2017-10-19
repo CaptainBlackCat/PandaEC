@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <include layout="@layout/search_bar"/>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/layout"
+        android:background="@color/app_background"
+        android:baselineAligned="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/vertical_list_container"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.ContentFrameLayout
+            android:id="@+id/sort_content_container"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+ <include
+     android:id="@+id/sort_fail"
+     layout="@layout/sort_failure"
+     android:visibility="gone"
+     />
+</android.support.v7.widget.LinearLayoutCompat>

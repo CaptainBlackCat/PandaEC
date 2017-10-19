@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/red_f7443e"
+    android:orientation="horizontal">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/search_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/scan"
+        android:paddingLeft="14dp"
+        android:paddingTop="13dp"
+        android:text="扫扫"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/search_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:editable="false"
+        android:background="@drawable/searchview_background"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="3dp"
+        android:hint="输入商品进行搜索"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="15sp" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/search_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/message"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:text="消息"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</android.support.v7.widget.LinearLayoutCompat>

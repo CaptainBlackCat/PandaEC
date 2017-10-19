@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        android:background="@color/red_f7443e">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_40PX"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/white_back" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:id="@+id/mysetting_ziliao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:background="@drawable/click"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:drawableLeft="@drawable/mysetting0"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:gravity="center"
+            android:text="个人资料"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_25PX" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:drawableRight="@drawable/my_back"
+            android:gravity="center"
+            android:text="查看"
+            android:textSize="@dimen/DIMEN_25PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:id="@+id/mysetting_connectwx"
+        android:clickable="true"
+        android:background="@drawable/click"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:drawableLeft="@drawable/mysetting1"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:gravity="center"
+            android:text="关联微信"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_25PX" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:drawableRight="@drawable/my_back"
+            android:gravity="center"
+            android:text="查看"
+            android:textSize="@dimen/DIMEN_25PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:id="@+id/mysetting_smrz"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:clickable="true"
+        android:background="@drawable/click"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:drawableLeft="@drawable/mysetting2"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:gravity="center"
+            android:text="实名认证"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_25PX" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:drawableRight="@drawable/my_back"
+            android:gravity="center"
+            android:text="查看"
+            android:textSize="@dimen/DIMEN_25PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:id="@+id/mysetting_guanyu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:clickable="true"
+        android:background="@drawable/click"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:drawableLeft="@drawable/mysetting3"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:gravity="center"
+            android:text="关于"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_25PX" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:drawableRight="@drawable/my_back"
+            android:gravity="center"
+            android:text="查看"
+            android:textSize="@dimen/DIMEN_25PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f5" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <LinearLayout
+        android:id="@+id/mysetting_dqbb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_80PX"
+        android:clickable="true"
+        android:background="@drawable/click"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:drawableLeft="@drawable/mysetting4"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:gravity="center"
+            android:text="当前版本"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/DIMEN_25PX" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:drawablePadding="@dimen/DIMEN_15PX"
+            android:drawableRight="@drawable/my_back"
+            android:gravity="center"
+            android:text="查看"
+            android:textSize="@dimen/DIMEN_25PX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <TextView
+        android:id="@+id/mysetting_updata_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:text="修改密码"
+        android:padding="@dimen/DIMEN_20PX"
+        android:textColor="@color/red_f7443e"
+        android:background="@drawable/click"
+        android:clickable="true"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/list_line" />
+
+    <TextView
+        android:id="@+id/mysetting_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:text="退出登录"
+        android:padding="@dimen/DIMEN_20PX"
+        android:textColor="@color/red_f7443e"
+        android:background="@drawable/click"
+        android:clickable="true"
+        android:gravity="center"/>
+</LinearLayout>

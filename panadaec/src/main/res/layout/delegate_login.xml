@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_110PX"
+        >
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/DIMEN_20PX"
+            android:paddingRight="@dimen/DIMEN_20PX"
+            android:src="@drawable/shop_back" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/login_headview"
+        android:layout_width="@dimen/DIMEN_200PX"
+        android:layout_height="@dimen/DIMEN_200PX"
+        android:src="@drawable/login_head"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/DIMEN_100PX"
+        />
+    <TextView
+        android:id="@+id/login_loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:background="@drawable/bg_login"
+        android:paddingBottom="@dimen/DIMEN_10PX"
+        android:gravity="center"
+        android:text="登 录"
+        android:layout_marginTop="@dimen/DIMEN_100PX"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_40PX" />
+
+    <TextView
+        android:id="@+id/login_regist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_90PX"
+        android:layout_marginLeft="@dimen/DIMEN_30PX"
+        android:layout_marginRight="@dimen/DIMEN_30PX"
+        android:textSize="@dimen/DIMEN_40PX"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:textColor="#FE4D72"
+        android:background="@drawable/bg_regist"
+        android:text="新用户注册"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/login_weixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_30PX"
+        android:textColor="@color/grey_3d"
+        android:drawableLeft="@drawable/wexin_login"
+        android:text="微信账号登录"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="@dimen/DIMEN_10PX"
+        android:layout_marginBottom="@dimen/DIMEN_40PX"
+        />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/grey_f5"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/getphoto_bytake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:textColor="@color/grey_3d"
+        android:textSize="@dimen/DIMEN_35PX"
+        android:gravity="center"
+        android:paddingTop="@dimen/DIMEN_20PX"
+        android:paddingBottom="@dimen/DIMEN_20PX"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"/>
+    <TextView
+        android:id="@+id/getphoto_byalbum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="相册"
+        android:textColor="@color/grey_3d"
+        android:textSize="@dimen/DIMEN_35PX"
+        android:gravity="center"
+        android:paddingTop="@dimen/DIMEN_20PX"
+        android:paddingBottom="@dimen/DIMEN_20PX"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_line"/>
+    <TextView
+        android:id="@+id/getphoto_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_35PX"
+        android:gravity="center"
+        android:background="@color/red_f7443e"
+        android:paddingTop="@dimen/DIMEN_20PX"
+        android:paddingBottom="@dimen/DIMEN_20PX"/>
+</LinearLayout>

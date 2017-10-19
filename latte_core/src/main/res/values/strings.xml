@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Latte_core</string>
+
+    <string name="wechat_friends">微信好友</string>
+    <string name="wechat_moment">朋友圈</string>
+    <string name="qq_friends">QQ好友</string>
+    <string name="qq_qzone">空间</string>
+    <string name="sina">微博</string>
+    <string name="copy_url">复制链接</string>
+    <string name="share_to">分享到</string>
+</resources>
